@@ -12,7 +12,7 @@ using namespace std;
 const int MAX_ACCOUNTS = 50;
 const int MAX_CUSTOMERS = 10;
 
-class Date { // Hammad Majid 
+class Date { // WAJEEH 
 // dates class is being compostioned into other classes
 public:
     int day, month, year;
@@ -90,7 +90,7 @@ public:
     }
 };
 
-class Customer { // Isha Zulifqar
+class Customer { // Isha 
     string username;
     string password;
     Account* accounts[MAX_ACCOUNTS]; // pointer 
@@ -236,7 +236,7 @@ public:
 };
 
 
-class Bank { // Isha Zulifqar                          // data base is aggregated into banks class
+class Bank { // Isha                           // data base is aggregated into banks class
     string name;                                          // it is because it can exist independently 
     Database db;
     Customer customers[MAX_CUSTOMERS];
@@ -282,7 +282,7 @@ public:
     }
 };
 
-int main() { // Hammad Majid
+int main() { // Wajeeh Ahmed
     Database db;
     Bank bank(db); 
     bank.prettyPrint();
